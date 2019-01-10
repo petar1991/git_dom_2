@@ -1,0 +1,16 @@
+@mixin boxSizing {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@mixin clearFix {
+    &:before,  &:after {
+        content: "";
+        display: block;
+        
+    }
+    &:after{
+        clear: both;
+    }
+}

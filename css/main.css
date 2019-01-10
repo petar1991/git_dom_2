@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+main {
+  width: 100%;
+  margin: 0 auto; }
+
+nav {
+  width: 100%;
+  height: auto;
+  border-bottom: none;
+  text-align: center; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #374249; }
+  nav li {
+    float: left; }
+  nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; }
+  nav li a:hover:not(.active) {
+    background-color: #f75311; }
+  nav .active {
+    background-color: #f75311; }
+
+.locationLogo {
+  text-align: left;
+  height: 1em; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,54 @@
+@import 'var';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fontFamily;
+    @include boxSizing;
+}
+
+main {
+    width: 100%;
+    margin: $centerMargin;
+}
+
+nav{
+    width: 100%;
+    height: auto;
+    border-bottom: none;
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $headerColor;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        
+      }
+      
+      li a:hover:not(.active) {
+        background-color: $narandzasta;
+        
+      }
+      
+      .active {
+        background-color: $narandzasta;
+      }
+}
+.locationLogo{
+    text-align: left;
+    height: 1em;
+}
