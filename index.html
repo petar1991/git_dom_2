@@ -5,10 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Git domaci stranica</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="scss/main.scss" />
     <script src="main.js"></script>
 </head>
 <body>
-    
+    <nav>
+        <ul>
+            <li class="active"><a href="#">New York</a></li>
+            <li><a href="#">Rent</a></li>
+            <li><a href="#">Buy</a></li>
+            <li><a href="#">Sell</a></li>
+            <li><a href="#">Messages</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="sec1">
+            <div class="naslov">
+                <h1>Welcome to HomeExcange</h1>
+                <p>Your fastest way to find or sell home online.</p>
+            </div>
+        </section>
+        <section class="sec2">
+            <div class="form-group">
+                <label for="sel1"></label>
+                <select class="form-control" id="sel1">
+                  <option>$250-$500</option>
+                  <option>$500-$1,000</option>
+                  <option>$1,200-$4,000</option>
+                  <option>$4,000-$10,000</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sel1"></label>
+                <select class="form-control" id="sel1">
+                  <option>1+Bedroom</option>
+                  <option>2+Bedroom</option>
+                  <option>3+Bedroom</option>
+                  <option>4+Bedroom</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sel1"></label>
+                <select class="form-control" id="sel1">
+                  <option>Garage</option>
+                  <option>No garage</option>
+                </select>
+              </div>
+        </section>
+        <section class="sec3">
+            <div class="image_box">
+                <img src="slike/1.jpg" alt="1" class="slika1">
+                <img src="slike/2.jpg" alt="2" class="slika2">
+                <img src="slike/3.jpg" alt="3" class="slika3">
+                <img src="slike/4.jpg" alt="4" class="slika4">
+                <img src="slike/5.jpg" alt="5" class="slika5">
+                <img src="slike/6.jpg" alt="6" class="slika6">
+            </div>
+        </section>
+        <section class="sec4">
+            <div class="tabela">
+                <h1>PRICING</h1>
+                <p>Our services prices in New York</p>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <th colspan="2" class="orange">Price</th>
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <th>Rent/Buy</th>
+                        <th>Sell</th>
+
+                    </tr>
+                    <tr>
+                        <th rowspan="3" class="orange">Location</th>
+                        <th>Downtown</th>
+                        <td>3$</td>
+                        <td>3$</td>
+                    </tr>
+                    <tr>
+                        
+                        <th>Center</th>
+                        <td>3$</td>
+                        <td>3$</td>
+                    </tr>
+                    <tr>
+                        
+                        <th>Manhattn</th>
+                        <td>3$</td>
+                        <td>3$</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="sec5">
+            <h1>CONTACT US</h1>
+            <div id="googleMap" style="width:20%;height:300px;" ></div>
+
+                    <script>
+                        function myMap() {
+                        var mapProp= {
+                        center:new google.maps.LatLng(51.508742,-0.120850),
+                        zoom:5,
+                        };
+                        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                        }
+                    </script>
+
+                    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+            <div class="forma">
+                <form>
+                    <select id="pol" name="pol">
+                    <option value="mrs">Mrs</option>
+                    <option value="ms">Ms</option>
+                    </select>
+
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="femail"></label>
+                    <input type="email" id="femail" name="email" placeholder="Your email..">
+
+                    <textarea placeholder="Your mesage..."></textarea>
+                  </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+            Copiright &copy;2016 HomeExcange
+    </footer>
 </body>
 </html>
