@@ -36,12 +36,13 @@ nav{
         color: white;
         text-align: center;
         padding: 14px 16px;
+        text-decoration: none;
         
       }
       
       li a:hover:not(.active) {
         background-color: $narandzasta;
-        
+        text-decoration: underline;
       }
       
       .active {
@@ -51,4 +52,60 @@ nav{
 .locationLogo{
     text-align: left;
     height: 1em;
+}
+
+section{
+    width: 100%;
+}
+
+.sec1{
+    background-image: url('../slike/intro.jpg');
+    height: 35em;
+    position: relative;
+    margin-bottom: 2em;
+
+    .naslov{
+		width: 100%;
+		text-align: center;
+        padding-top: 30%;
+       
+        
+            
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            display: block;
+            background: rgba(10, 9, 9, 0.479);
+            
+            border-radius:0;
+            margin: 0;
+            
+        }
+        p {
+            text-align: center;
+            color: white;
+            display: block;
+            background: rgba(10, 9, 9, 0.479);
+            
+            border-radius:0;
+            margin: 0;
+        }
+        
+    }   
+}
+
+.sec3, .sec5{
+    background-color: $pozadinaSekcija;
+    
+}
+.image_box{
+    position: relative;
+    margin: $centerMargin;
+    width: 700px;
+    
+    img{
+        width: 150px;
+    }
 }
